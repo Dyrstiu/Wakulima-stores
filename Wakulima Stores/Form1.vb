@@ -1,4 +1,7 @@
-﻿Public Class Form1
+﻿'wakulima stores 
+'felix vaati 
+'26/7/2020
+Public Class Form1
 
     Private Sub Splitter1_SplitterMoved(ByVal sender As System.Object, ByVal e As System.Windows.Forms.SplitterEventArgs)
 
@@ -19,6 +22,8 @@
         TotalsTextBox.Clear()
         AmountTextBox.Clear()
         BalanceTextBox.Clear()
+        QuantityTextBox.Clear()
+
 
     End Sub
 
@@ -32,5 +37,21 @@
         TotalsTextBox.Text = TotalsDecimal.ToString("C")
 
 
+
+    End Sub
+
+    Private Sub TotalButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TotalButton.Click
+        Dim TotalsDecimal As Decimal
+        TotalsDecimal = Decimal.Parse(TotalsTextBox.Text, Globalization.NumberStyles.Currency)
+        Dim BalanceDecimal As Decimal
+        Dim AmountDecimal As Decimal
+        AmountDecimal = Decimal.Parse(AmountTextBox.Text, Globalization.NumberStyles.Currency)
+        BalanceDecimal = (AmountDecimal - TotalsDecimal)
+        BalanceTextBox.Text = BalanceDecimal.ToString("C")
+
+    End Sub
+
+    Private Sub QuantityTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles QuantityTextBox.TextChanged
+        Const QualityTextBox As Integer = 5
     End Sub
 End Class
