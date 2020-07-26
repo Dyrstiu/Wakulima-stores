@@ -40,12 +40,16 @@ Partial Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.QuantityTextBox = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComputeButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TotalButton
         '
-        Me.TotalButton.Location = New System.Drawing.Point(82, 337)
+        Me.TotalButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.TotalButton.Location = New System.Drawing.Point(332, 337)
         Me.TotalButton.Name = "TotalButton"
         Me.TotalButton.Size = New System.Drawing.Size(75, 23)
         Me.TotalButton.TabIndex = 0
@@ -54,6 +58,7 @@ Partial Class Form1
         '
         'ResetButton
         '
+        Me.ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ResetButton.Location = New System.Drawing.Point(220, 337)
         Me.ResetButton.Name = "ResetButton"
         Me.ResetButton.Size = New System.Drawing.Size(75, 23)
@@ -77,7 +82,7 @@ Partial Class Form1
         '
         'AmountTextBox
         '
-        Me.AmountTextBox.Location = New System.Drawing.Point(143, 227)
+        Me.AmountTextBox.Location = New System.Drawing.Point(143, 241)
         Me.AmountTextBox.Name = "AmountTextBox"
         Me.AmountTextBox.Size = New System.Drawing.Size(152, 20)
         Me.AmountTextBox.TabIndex = 4
@@ -102,7 +107,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(51, 135)
+        Me.Label2.Location = New System.Drawing.Point(58, 131)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(34, 13)
         Me.Label2.TabIndex = 7
@@ -111,7 +116,7 @@ Partial Class Form1
         'Amount
         '
         Me.Amount.AutoSize = True
-        Me.Amount.Location = New System.Drawing.Point(57, 230)
+        Me.Amount.Location = New System.Drawing.Point(57, 244)
         Me.Amount.Name = "Amount"
         Me.Amount.Size = New System.Drawing.Size(80, 13)
         Me.Amount.TabIndex = 8
@@ -129,7 +134,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(46, 198)
+        Me.Label3.Location = New System.Drawing.Point(46, 208)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(91, 13)
         Me.Label3.TabIndex = 10
@@ -137,7 +142,7 @@ Partial Class Form1
         '
         'TotalsTextBox
         '
-        Me.TotalsTextBox.Location = New System.Drawing.Point(143, 191)
+        Me.TotalsTextBox.Location = New System.Drawing.Point(141, 201)
         Me.TotalsTextBox.Name = "TotalsTextBox"
         Me.TotalsTextBox.ReadOnly = True
         Me.TotalsTextBox.Size = New System.Drawing.Size(152, 20)
@@ -145,12 +150,14 @@ Partial Class Form1
         '
         'ExitButton
         '
+        Me.ExitButton.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ExitButton.Location = New System.Drawing.Point(444, 337)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(75, 23)
         Me.ExitButton.TabIndex = 12
         Me.ExitButton.Text = "E&xit"
-        Me.ExitButton.UseVisualStyleBackColor = True
+        Me.ExitButton.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -188,14 +195,42 @@ Partial Class Form1
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = 56
         Me.LineShape1.X2 = 406
-        Me.LineShape1.Y1 = 173
-        Me.LineShape1.Y2 = 174
+        Me.LineShape1.Y1 = 186
+        Me.LineShape1.Y2 = 187
+        '
+        'QuantityTextBox
+        '
+        Me.QuantityTextBox.Location = New System.Drawing.Point(105, 155)
+        Me.QuantityTextBox.Name = "QuantityTextBox"
+        Me.QuantityTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.QuantityTextBox.TabIndex = 16
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(45, 155)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(52, 13)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = "Quantity :"
+        '
+        'ComputeButton
+        '
+        Me.ComputeButton.Location = New System.Drawing.Point(61, 337)
+        Me.ComputeButton.Name = "ComputeButton"
+        Me.ComputeButton.Size = New System.Drawing.Size(75, 23)
+        Me.ComputeButton.TabIndex = 18
+        Me.ComputeButton.Text = "&Compute"
+        Me.ComputeButton.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(582, 372)
+        Me.Controls.Add(Me.ComputeButton)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.QuantityTextBox)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ExitButton)
@@ -213,6 +248,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TotalButton)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cash Out"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -236,5 +272,8 @@ Partial Class Form1
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents QuantityTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents ComputeButton As System.Windows.Forms.Button
 
 End Class

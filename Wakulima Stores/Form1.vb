@@ -21,4 +21,16 @@
         BalanceTextBox.Clear()
 
     End Sub
+
+    Private Sub ComputeButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComputeButton.Click
+        Dim CostDecimal As Decimal
+        CostDecimal = Decimal.Parse(CostTextBox.Text, Globalization.NumberStyles.Currency)
+        Dim QuantityInteger As Integer
+        QuantityInteger = Integer.Parse(QuantityTextBox.Text, Globalization.NumberStyles.Number)
+        Dim TotalsDecimal As Decimal
+        TotalsDecimal = CostDecimal * QuantityInteger
+        TotalsTextBox.Text = TotalsDecimal.ToString("C")
+
+
+    End Sub
 End Class

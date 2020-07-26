@@ -1,0 +1,9 @@
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\bin\Debug\Wakulima Stores.exe
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\bin\Debug\Wakulima Stores.pdb
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\bin\Debug\Wakulima Stores.xml
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\obj\x86\Debug\Wakulima Stores.vbproj.GenerateResource.Cache
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\obj\x86\Debug\Wakulima Stores.exe
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\obj\x86\Debug\Wakulima Stores.xml
+C:\Users\sa\documents\visual studio 2010\Projects\Wakulima Stores\Wakulima Stores\obj\x86\Debug\Wakulima Stores.pdb
